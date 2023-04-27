@@ -1,0 +1,56 @@
+2023-04-27 18:04:47,944:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-27 18:04:47,945:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-27 18:04:47,945:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-27 18:04:47,946:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-27 18:04:50,842:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-04-27 18:05:13,738:INFO:Initializing load_model()
+2023-04-27 18:05:13,740:INFO:load_model(model_name=lxgb, platform=None, authentication=None, verbose=True)
+2023-04-27 18:05:59,719:INFO:Initializing load_model()
+2023-04-27 18:05:59,719:INFO:load_model(model_name=model/lxgb, platform=None, authentication=None, verbose=True)
+2023-04-27 18:06:06,832:INFO:Initializing load_model()
+2023-04-27 18:06:06,833:INFO:load_model(model_name=model/lxgb, platform=None, authentication=None, verbose=True)
+2023-04-27 18:06:07,081:INFO:Initializing predict_model()
+2023-04-27 18:06:07,081:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002609E579CA0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\heses\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['CreditScore', 'Age', 'Tenure',
+                                             'Balance', 'NumOfProducts',
+                                             'HasCrCard', 'IsActiveMember',
+                                             'EstimatedSalary'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Geography', 'Gender'],
+                                    transforme...
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['Geography'],
+                                    transformer=OneHotEncoder(cols=['Geography'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('normalize', TransformerWrapper(transformer=MinMaxScaler())),
+                ('trained_model', LGBMClassifier(random_state=6524))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000002609E57CF70>)
+2023-04-27 18:06:07,081:INFO:Checking exceptions
+2023-04-27 18:06:07,082:INFO:Preloading libraries
+2023-04-27 18:06:07,083:INFO:Set up data.
+2023-04-27 18:06:07,106:INFO:Set up index.
+2023-04-27 18:07:31,490:WARNING:C:\Users\heses\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-04-27 18:07:31,509:WARNING:C:\Users\heses\anaconda3\lib\site-packages\sklearn\utils\deprecation.py:87: FutureWarning: Function plot_confusion_matrix is deprecated; Function `plot_confusion_matrix` is deprecated in 1.0 and will be removed in 1.2. Use one of the class methods: ConfusionMatrixDisplay.from_predictions or ConfusionMatrixDisplay.from_estimator.
+  warnings.warn(msg, category=FutureWarning)
+
+2023-04-27 18:07:32,885:WARNING:C:\Users\heses\anaconda3\lib\site-packages\sklearn\utils\deprecation.py:87: FutureWarning: Function plot_roc_curve is deprecated; Function :func:`plot_roc_curve` is deprecated in 1.0 and will be removed in 1.2. Use one of the class methods: :meth:`sklearn.metric.RocCurveDisplay.from_predictions` or :meth:`sklearn.metric.RocCurveDisplay.from_estimator`.
+  warnings.warn(msg, category=FutureWarning)
+
+2023-04-27 18:07:34,092:WARNING:C:\Users\heses\anaconda3\lib\site-packages\sklearn\utils\deprecation.py:87: FutureWarning: Function plot_precision_recall_curve is deprecated; Function `plot_precision_recall_curve` is deprecated in 1.0 and will be removed in 1.2. Use one of the class methods: PrecisionRecallDisplay.from_predictions or PrecisionRecallDisplay.from_estimator.
+  warnings.warn(msg, category=FutureWarning)
+
